@@ -1,0 +1,46 @@
+# 3-Bus Power Flow Study
+
+## Objective
+
+A small power-systems study using PowerWorld Simulator to investigate how increasing electrical demand at Bus 2 affects the operation of a 3-bus transmission network.
+
+## Software
+
+- PowerWorld Simulator
+- Microsoft Excel
+
+## Method
+
+A 3-bus power system was created in PowerWorld Simulator.
+
+The power flow was solved using the Newton-Raphson method. The load at Bus 2 was then varied while monitoring:
+
+- Bus 2 voltage
+- Bus 3 voltage
+- Generator output
+- Total system losses
+
+## Results
+
+| Case | Bus 2 Load (MW) | Bus 2 Voltage (p.u.) | Bus 3 Voltage (p.u.) | Generator Output (MW) | Total Losses (MW) |
+|---|---:|---:|---:|---:|---:|
+| Case 1 | 80 | 0.8991 | 0.8626 | 133 | 3.1 |
+| Case 2 | 100 | 0.8925 | 0.8557 | 154 | 3.9 |
+| Case 3 | 120 | 0.8852 | 0.8481 | 175 | 4.7 |
+
+## Observations
+
+Increasing the load at Bus 2 resulted in:
+
+- Increased generator output
+- Decreased voltage at Bus 2
+- Decreased voltage at Bus 3
+- Increased total system losses
+
+This demonstrates how increasing demand can affect voltage levels, generation requirements and transmission losses within an AC power system.
+
+## Files
+
+- `3 bus system.pwd` — PowerWorld model
+- `results.xlsx` — Experimental results
+- `3 bus system.png` — Screenshot of the simulated network
